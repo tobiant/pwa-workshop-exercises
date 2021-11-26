@@ -1,0 +1,22 @@
+{
+  "name": "advanced-pwa-ui5",
+  "version": "1.0.0",
+  "description": "Advanced PWA with UI5 and Workbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.internal.xc/nero/simple-service-worker"
+  },
+  "keywords": [
+    "PWA",
+    "UI5",
+    "Service",
+    "Worker",
+    "Workbox"
+  ],
+  "author": "Leon Möller",
+  "license": "ISC"
+}
