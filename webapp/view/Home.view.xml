@@ -7,10 +7,10 @@
             id="page"
             title="{i18n>title}">
         <content>
-            <HBox justifyContent="SpaceBetween" alignItems="Stretch">
+            <VBox justifyContent="Center" alignItems="Center" alignContent="SpaceAround">
                 <Image src="../assets/icons/android-chrome-512x512.png" width="100%"/>
                 <Button text="{i18n>btn}"/>
-            </HBox>
+            </VBox>
         </content>
     </Page>
 </mvc:View>
