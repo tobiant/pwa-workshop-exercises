@@ -1,26 +1,15 @@
-# PWA Workshop
-This contains the repositorys needed for the exercises of the PWA workshop by Leon Möller. Please use the branches to do the exercises. Each branch also has a solution branch in case you're stuck.
-## First setup
-I recommend using a local IDE like WebStorm or Visual Studio Code to do this exercises. Anyway you don't have any access from cloud IDEs to Inwerken's internal GitLab. A workaround is to clone this repo locally and change the remote to GitHub.com or GitLab.com and clone from there again for example.
-1. Make sure you have access right to this repository.
-2. Check for you npm installation with ``npm -v`` and if there's nothing install it before continuing.
-3. Clone this repository with ``git clone <current url from your adress bar>``.
-4. Fetch all branches with ``git fetch``.
-5. Start with the first exercise and use ``git checkout simple`` to change your local branch from ``main`` to ``simple``.
-6. After finishing the first exercise you can check your results against the solution branch with ``git checkout simple-solution``.
-7. Repeat the same for the remaining exercises starting at step 4.
-## Branches
-Overview of this repository's relevant branches:
+# Advanced exercise
+In this exercise you will follow the official UI5 async guideline and create a service worker with workbox cli again.
 
-| Branch      | Description |
-| ----------- | ----------- |
-| simple | Exercise 1: Very basic PWA |
-| simple-solution | Exercise 1: Solution |
-| workbox | Exercise 2: PWA + Google Workbox |
-| workbox-solution | Exercise 2: Solution |
-| advanced | Exercise 3: PWA with SAP UI5 + Google Workbox |
-| advanced-solution | Exercise 3: Solution |
+## Dependencies
+For this exercise you will need a few dependencies to build the UI5 app. Run ``npm install`` to install them in your local repository.
+Also you will need the workbox command line interface from exercise 2 again.
+1. Install local dependencies``npm install``.
+2. If you didn't install workbox in exercise 2 you can catch up with ``npm install -g workbox-cli``
 
-## Finishing the workshop
-If you want to save your work you can change the remote of your local repository with ``git remote add <your newly created repo on Github or GitLab>`` and then push your work to your own repository.
-
+## Tasks
+1. Read and apply the guidelines to this UI5 app:
+https://sapui5.hana.ondemand.com/sdk/#/topic/676b636446c94eada183b1218a824717.html
+2. Make sure the app loads a maximum of one request synchronous by adding the url parameter ``sap-ui-nosync=warn`` and watch out the console log of devtools.
+3. Create your service worker with workbox as you did before in the second exercise.
+4. 
