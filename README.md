@@ -1,7 +1,7 @@
 # PWA Workshop
 This contains the repositorys needed for the exercises of the PWA workshop by Leon Möller. Please use the branches to do the exercises. Each branch also has a solution branch in case you're stuck.
 ## First setup
-I recommend using a local IDE like WebStorm or Visual Studio Code to do this exercises. Anyway you don't have any access from cloud IDEs to Inwerken's internal GitLab.
+I recommend using a local IDE like WebStorm or Visual Studio Code to do this exercises. Anyway you don't have any access from cloud IDEs to Inwerken's internal GitLab. A workaround is to clone this repo locally and change the remote to GitHub.com or GitLab.com and clone from there again for example.
 1. Make sure you have access right to this repository.
 2. Check for you npm installation with ``npm -v`` and if there's nothing install it before continuing.
 3. Clone this repository with ``git clone <current url from your adress bar>``.
