@@ -10,7 +10,7 @@ I recommend using a local IDE like WebStorm or Visual Studio Code to do this exe
 6. After finishing the first exercise you can check your results against the solution branch with ``git checkout simple-solution``.
 7. Repeat the same for the remaining exercises starting at step 4.
 ## Branches
-Overview of this repository's branches:
+Overview of this repository's relevant branches:
 
 | Branch      | Description |
 | ----------- | ----------- |
