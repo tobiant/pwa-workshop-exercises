@@ -4,7 +4,8 @@
   "description": "Advanced PWA with UI5 and Workbox",
   "main": "index.js",
   "scripts": {
-    "build": "ui5 build && workbox injectManifest config/workbox-config.js"
+    "build": "ui5 build",
+    "build-pwa": "ui5 build && workbox injectManifest config/workbox-config.js"
   },
   "repository": {
     "type": "git",

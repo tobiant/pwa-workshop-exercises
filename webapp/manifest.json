@@ -6,8 +6,8 @@
     "applicationVersion": {
       "version": "1.0.0"
     },
-    "title": "Advanced PWA UI5 application",
-    "description": "UI5 application as PWA with workbox."
+    "title": "{{title}}",
+    "description": "{{description}}"
   },
 
   "sap.ui": {
@@ -31,16 +31,12 @@
     "rootView": {
       "viewName": "advanced.pwa.view.App",
       "type": "XML",
-      "async": true,
-      "id": "app"
+      "id": "app",
+      "async": false
     },
     "dependencies": {
       "minUI5Version": "1.96.0",
-      "libs": {
-        "sap.ui.core": {},
-        "sap.m": {},
-        "sap.ui.layout": {}
-      }
+      "libs": {}
     },
     "contentDensities": {
       "compact": true,
@@ -66,7 +62,7 @@
         "viewPath": "advanced.pwa.view",
         "controlId": "app",
         "controlAggregation": "pages",
-        "async": true
+        "async": false
       },
       "routes": [
         {
