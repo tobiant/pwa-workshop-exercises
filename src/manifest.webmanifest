@@ -6,6 +6,7 @@
     "background_color": "#c7c7c7",
     "display": "standalone",
     "start_url": "/",
+    "id": "/",
     "icons": [
         {
             "src": "/assets/icons/android-chrome-192x192.png",
