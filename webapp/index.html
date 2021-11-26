@@ -19,6 +19,14 @@
     <meta name="msapplication-TileColor" content="#333333">
     <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
     <meta name="theme-color" content="#E2BF03">
+    <script>
+		// register service worker
+		navigator.serviceWorker.register("sw.js", {scope: '.'}).then(function(registration) {
+			console.log('succeeded');
+		}).catch(function(error) {
+			console.log(error);
+		});
+    </script>
 
     <script id="sap-ui-bootstrap"
             src="https://sapui5.hana.ondemand.com/1.96.0/resources/sap-ui-core.js"
@@ -29,6 +37,7 @@
             data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
             data-sap-ui-compatVersion="edge"
             data-sap-ui-async="true"
+            data-sap-ui-libs="sap.m,sap.ui.layout"
             data-sap-ui-frameOptions="trusted">
     </script>
 </head>
