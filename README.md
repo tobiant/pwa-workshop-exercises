@@ -10,6 +10,8 @@ Also you will need the workbox command line interface from exercise 2 again.
 ## Tasks
 1. Read and apply the guidelines to this UI5 app:
 https://sapui5.hana.ondemand.com/sdk/#/topic/676b636446c94eada183b1218a824717.html
-2. Make sure the app loads a maximum of one request synchronous by adding the url parameter ``sap-ui-nosync=warn`` and watch out the console log of devtools.
-3. Create your service worker with workbox as you did before in the second exercise.
-4. 
+2. Build the app with ``npm run build``
+3. Start the webserver with ``npx http-server ./dist/``
+4. Make sure the app loads a maximum of one request synchronous by adding the url parameter ``sap-ui-xx-nosync=warn`` and watch out the console log of devtools.
+5. Create your service worker with workbox as you did before in the second exercise.
+6. 

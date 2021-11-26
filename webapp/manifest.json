@@ -1,27 +1,24 @@
 {
-  "_version": "1.12.0",
+  "_version": "1.1.0",
   "sap.app": {
-    "id": "sap.ui.demo.basicTemplate",
+    "id": "advanced.pwa",
     "type": "application",
-    "i18n": "i18n/i18n.properties",
     "applicationVersion": {
       "version": "1.0.0"
     },
-    "title": "{{appTitle}}",
-    "description": "{{appDescription}}",
-    "resources": "resources.json",
-    "ach": "ach"
+    "title": "Advanced PWA UI5 application",
+    "description": "UI5 application as PWA with workbox."
   },
 
   "sap.ui": {
     "technology": "UI5",
     "icons": {
-      "icon": "",
-      "favIcon": "",
-      "phone": "",
-      "phone@2": "",
-      "tablet": "",
-      "tablet@2": ""
+      "icon": "/assets/icons/favicon-32x32.png",
+      "favIcon": "/assets/icons/favicon.ico",
+      "phone": "/assets/icons/apple-touch-icon.png",
+      "phone@2": "/assets/icons/apple-touch-icon.png",
+      "tablet": "/assets/icons/apple-touch-icon.png",
+      "tablet@2": "/assets/icons/apple-touch-icon.png"
     },
     "deviceTypes": {
       "desktop": true,
@@ -32,13 +29,13 @@
 
   "sap.ui5": {
     "rootView": {
-      "viewName": "sap.ui.demo.basicTemplate.view.App",
+      "viewName": "advanced.pwa.view.App",
       "type": "XML",
       "async": true,
       "id": "app"
     },
     "dependencies": {
-      "minUI5Version": "1.60.0",
+      "minUI5Version": "1.96.0",
       "libs": {
         "sap.ui.core": {},
         "sap.m": {},
@@ -53,7 +50,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "sap.ui.demo.basicTemplate.i18n.i18n"
+          "bundleName": "advanced.pwa.i18n.i18n"
         }
       }
     },
@@ -66,7 +63,7 @@
       "config": {
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
-        "viewPath": "sap.ui.demo.basicTemplate.view",
+        "viewPath": "advanced.pwa.view",
         "controlId": "app",
         "controlAggregation": "pages",
         "async": true

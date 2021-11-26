@@ -4,7 +4,7 @@
   "description": "Advanced PWA with UI5 and Workbox",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "ui5 build"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
     "Workbox"
   ],
   "author": "Leon Möller",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@ui5/cli": "^2.14.1"
+  }
 }
