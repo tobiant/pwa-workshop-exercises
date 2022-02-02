@@ -1,15 +1,35 @@
 <mvc:View
-        controllerName="advanced.pwa.controller.Home"
-        displayBlock="true"
-        xmlns="sap.m"
-        xmlns:mvc="sap.ui.core.mvc">
+    controllerName="advanced.pwa.controller.Home"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
     <Page
-            id="page"
-            title="{i18n>title}">
+        id="page"
+        title="{i18n>title}">
         <content>
-            <VBox justifyContent="Center" alignItems="Center" alignContent="SpaceAround">
-                <Image src="../assets/icons/android-chrome-512x512.png" width="100%"/>
-                <Button text="{i18n>btn}"/>
+            <VBox>
+                <HBox justifyContent="SpaceBetween" alignItems="End">
+                    <Title class="sapUiTinyMarginBegin" level="H1" text="{i18n>header}" />
+                    <HBox class="sapUiTinyMarginEnd">
+                        <Input id="input" placeholder="{i18n>placeholder}" />
+                        <Button text="{i18n>btn}" press="handleAdd" />
+                    </HBox>
+                </HBox>
+                <List
+                    mode="Delete"
+                    delete="handleDelete"
+                    enableBusyIndicator="true"
+                    growing="true"
+                    items="{
+			path: '/Products'
+		}">
+                    <StandardListItem
+                        title="{Name}"
+                        description="{ProductId}"
+                        icon="../assets/icons/android-chrome-512x512.png"
+                        iconDensityAware="false"
+                        iconInset="false" />
+                </List>
             </VBox>
         </content>
     </Page>

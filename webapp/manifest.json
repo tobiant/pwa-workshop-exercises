@@ -3,13 +3,21 @@
   "sap.app": {
     "id": "advanced.pwa",
     "type": "application",
+    "dataSources": {
+      "oData.org": {
+        "uri": "http://localhost:3000/https://services.odata.org/V2/(S(0174451871896))/OData/OData.svc",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0"
+        }
+      }
+    },
     "applicationVersion": {
       "version": "1.0.0"
     },
     "title": "Advanced PWA UI5 application",
     "description": "UI5 application as PWA with workbox."
   },
-
   "sap.ui": {
     "technology": "UI5",
     "icons": {
@@ -26,7 +34,6 @@
       "phone": true
     }
   },
-
   "sap.ui5": {
     "rootView": {
       "viewName": "advanced.pwa.view.App",
@@ -47,6 +54,12 @@
       "cozy": true
     },
     "models": {
+      "": {
+        "dataSource": "oData.org",
+        "settings": {
+          "useBatch": false
+        }
+      },
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
@@ -55,9 +68,11 @@
       }
     },
     "resources": {
-      "css": [{
-        "uri": "css/style.css"
-      }]
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
     },
     "routing": {
       "config": {
@@ -72,7 +87,9 @@
         {
           "pattern": "",
           "name": "home",
-          "target": ["home"]
+          "target": [
+            "home"
+          ]
         }
       ],
       "targets": {

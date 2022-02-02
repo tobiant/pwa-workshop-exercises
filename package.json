@@ -4,7 +4,8 @@
   "description": "Advanced PWA with UI5 and Workbox",
   "main": "index.js",
   "scripts": {
-    "build": "ui5 build && workbox injectManifest config/workbox-config.js"
+    "build": "ui5 build && workbox injectManifest config/workbox-config.js",
+    "start-proxy": "node http-proxy/server.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "author": "Leon Möller",
   "license": "ISC",
   "dependencies": {
-    "@ui5/cli": "^2.14.1"
+    "@ui5/cli": "^2.14.1",
+    "cors-anywhere": "^0.4.4"
   }
 }
