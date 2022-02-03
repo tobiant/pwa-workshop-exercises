@@ -8,6 +8,7 @@ sap.ui.define([
 	return UIComponent.extend("advanced.pwa.Component", {
 
 		metadata: {
+			// interfaces: ["sap.ui.core.IAsyncContentCreation"],
 			manifest: "json"
 		},
 

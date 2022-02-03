@@ -22,4 +22,3 @@ https://sapui5.hana.ondemand.com/sdk/#/topic/676b636446c94eada183b1218a824717.ht
 11. Implement a strategy to cache you oData requests.
 12. Get familiar with the Workbox background-sync API: https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-background-sync.Queue
 13. Implement the queue to store requests.
-test123

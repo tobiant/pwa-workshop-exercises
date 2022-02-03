@@ -6,8 +6,8 @@
     "applicationVersion": {
       "version": "1.0.0"
     },
-    "title": "{{title}}",
-    "description": "{{description}}"
+    "title": "title123",
+    "description": "title123456"
   },
 
   "sap.ui": {
@@ -32,7 +32,7 @@
       "viewName": "advanced.pwa.view.App",
       "type": "XML",
       "id": "app",
-      "async": false
+      "async": true
     },
     "dependencies": {
       "minUI5Version": "1.96.0",
@@ -62,7 +62,7 @@
         "viewPath": "advanced.pwa.view",
         "controlId": "app",
         "controlAggregation": "pages",
-        "async": false
+        "async": true
       },
       "routes": [
         {
@@ -76,7 +76,7 @@
           "viewName": "Home",
           "viewId": "home",
           "viewLevel": 1,
-          "title": "{i18n>title}"
+          "title": "titleasdasd"
         }
       }
     }

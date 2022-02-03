@@ -18,7 +18,7 @@
     "Worker",
     "Workbox"
   ],
-  "author": "Leon Möller",
+  "author": "Nero",
   "license": "ISC",
   "dependencies": {
     "@ui5/cli": "^2.14.1"
