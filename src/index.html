@@ -23,7 +23,7 @@
     <meta name="theme-color" content="#E2BF03">
     <script>
 		// register service worker
-		navigator.serviceWorker.register("sw.js", {scope: '.'}).then(function(registration) {
+		navigator.serviceWorker.register("sw.js", {scope: '.'}).then(function(registration) { //this requires https
 			document.querySelector('#status').textContent = 'succeeded';
 		}).catch(function(error) {
 			document.querySelector('#status').textContent = error;
