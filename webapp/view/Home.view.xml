@@ -9,7 +9,7 @@
         <content>
             <VBox justifyContent="Center" alignItems="Center" alignContent="SpaceAround">
                 <Image src="../assets/icons/android-chrome-512x512.png" width="100%"/>
-                <Button text="{i18n>btn}"/>
+                <Button text="{i18n>btn}" press="onPress"/>
             </VBox>
         </content>
     </Page>

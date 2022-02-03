@@ -1,15 +1,18 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
-	"../model/formatter"
-], function(Controller, formatter) {
-	"use strict";
+    "sap/ui/core/mvc/Controller",
+    "../model/formatter"
+], function (Controller, formatter) {
+    "use strict";
 
-	return Controller.extend("advanced.pwa.controller.Home", {
+    return Controller.extend("advanced.pwa.controller.Home", {
 
-		formatter: formatter,
+        formatter: formatter,
 
-		onInit: function () {
+        onInit: function () {
 
-		}
-	});
+        },
+        onPress: function () {
+			console.error("hallo")
+        }
+    });
 });

@@ -36,7 +36,11 @@
     },
     "dependencies": {
       "minUI5Version": "1.96.0",
-      "libs": {}
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.ui.layout": {}
+      }
     },
     "contentDensities": {
       "compact": true,
